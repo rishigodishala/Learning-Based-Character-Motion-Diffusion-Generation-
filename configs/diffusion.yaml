@@ -1,0 +1,31 @@
+# Unconditional Motion Diffusion Configuration for Unitree H1 Locomotion (Phase 8)
+dataset:
+  data_dir: "c:/Thesis/data"
+  sequence_length: 196
+  feature_dim: 47
+
+model:
+  feature_dim: 47
+  latent_dim: 512
+  num_layers: 8
+  num_heads: 8
+  dim_feedforward: 2048
+  dropout: 0.1
+
+diffusion:
+  num_timesteps: 1000
+  beta_schedule: "linear"
+  beta_start: 0.0001
+  beta_end: 0.02
+  prediction_target: "epsilon"
+
+training:
+  batch_size: 32
+  epochs: 500
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  gradient_clipping: 1.0
+  seed: 42
+  checkpoint_interval: 50
+  validation_interval: 10
+  device: "cuda"
