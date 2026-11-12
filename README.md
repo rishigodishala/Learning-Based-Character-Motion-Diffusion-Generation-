@@ -1,4 +1,6 @@
-# Learning-Based Character Locomotion: Comparative Evaluation of Reinforcement Learning, Diffusion Models, and Hybrid Execution under Challenging Physical Conditions
+# Learning-Based Character Motion: Diffusion
+Generation and Numerical Evaluation of PD
+and PPO-Augmented Tracking
 
 **Master of Science in Computer Science Thesis Project**  
 *Blekinge Institute of Technology (BTH), Karlskrona, Sweden*  
